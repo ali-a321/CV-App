@@ -1,0 +1,180 @@
+.root{
+  margin: 0;
+  padding: 0;
+}
+.App {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  background-color: #211f1f;
+  color: whitesmoke;
+  padding: 1rem;
+}
+.formWrapper{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+@media (max-width: 790px) {
+  .formWrapper{
+  flex-direction: column;
+  align-items: center;
+}
+}
+.personalTitle, .experienceTitle, .educationTitle{
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+.personal-form, .experience-form, .education-form{
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem ;
+  margin-right: 1.5rem;
+ 
+}
+input{
+  width: 12.5rem;
+}
+.combine{
+padding-top: 1rem;
+padding-bottom: 3rem;
+display: flex;
+justify-content: center;
+gap: 2rem ;
+}
+
+.addExp, .addEdu{
+  margin-top: 0.5rem;
+  background-color: lightgreen;
+  width: 12rem;
+  height: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.deleteExp, .deleteEdu{
+  margin-top: 1rem;
+  background-color: lightcoral;
+  width: 12rem;
+  height: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.previewContainer{
+  margin: 25mm 25mm 25mm 25mm;
+}
+.previewHeader{
+  
+  font-size: 3rem;
+  font-weight: bold;
+  background-color: lightblue;
+  padding: 1.2rem;
+  padding-right: 4rem;
+}
+
+.descriptionHeader, .experienceHeader, .educationHeader, .personalDetails{
+  margin-left: 1rem;
+color: blue;
+font-size: 1rem;
+font-weight: bold;
+padding-bottom: 0.1rem;
+border-bottom: 1px solid gray;
+
+}
+
+.infoContainer{
+  margin-top: 1rem;
+  display: flex;
+  gap: 10px  ;
+}
+
+.columnContainer{
+  width: 70%;
+}
+.personalInfoContainer{
+  width: 30%;
+}
+.profilePic{
+  width: 100%;
+  display:block ;
+
+}
+.personalDetails{
+  margin-left: 0;
+ 
+}
+
+.universityInfo{
+  font-weight: bold;
+}
+span{
+  font-weight: normal;
+  color: black;
+}
+.previewInfo{
+  font-size: 2rem;
+ 
+}
+.titleInfo{
+  font-size: 1.3rem;
+}
+.descriptionInput{
+  max-width: 30rem;
+ word-wrap: break-word;
+}
+.workDuty, .addressInfo, .emailInfo{
+  max-width: 20rem;
+  word-wrap: break-word;
+}
+.universitytitle{
+  color: black;
+  font-weight: bold;
+}
+.italic{
+  font-style: italic;
+}
+.uploadedImg{
+  max-width: 10rem;
+}
+@media (max-width: 790px) {
+  .uploadedImg{
+  max-width: 65%;
+}
+.combine{
+  padding-bottom: 5rem;
+}
+}
+
+.centerBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-direction: column;
+
+}
+.generateBtn{
+  font-size: 1.3rem;
+  background-color: lightgreen;
+  border-radius: 15px;
+  border: none;
+  height: 1.5rem;
+  cursor: pointer;
+}
+.filePdf{
+  margin: 0.5rem;
+}
