@@ -239,7 +239,7 @@ export default function FormInput() {
                 value={singleData.workInformation.location}
               />
               <input
-                type="text"
+                type="number"
                 maxLength={8}
                 placeholder="Start-date"
                 onChange={(e) => handleWorkChange(e, index)}
@@ -247,7 +247,7 @@ export default function FormInput() {
                 value={singleData.workInformation.begin}
               />
               <input
-                type="text"
+                type="number"
                 maxLength={8}
                 placeholder="End-date"
                 onChange={(e) => handleWorkChange(e, index)}
