@@ -246,7 +246,7 @@ export default function FormInput() {
               />
               <input
                 type="text"
-                maxLength={8}
+                maxLength={15}
                 placeholder="Start-date"
                 onChange={(e) => handleWorkChange(e, index)}
                 name="begin"
@@ -255,7 +255,7 @@ export default function FormInput() {
               />
               <input
                 type="text"
-                maxLength={8}
+                maxLength={15}
                 placeholder="End-date"
                 onChange={(e) => handleWorkChange(e, index)}
                 name="last"
@@ -313,7 +313,7 @@ export default function FormInput() {
               />
               <input
                 type="text"
-                maxLength={8}
+                maxLength={15}
                 placeholder="From"
                 onChange={(e) => handleEduChange(e, index)}
                 name="start"
@@ -321,7 +321,7 @@ export default function FormInput() {
               />
               <input
                 type = "text"
-                maxLength={8}
+                maxLength={15}
                 placeholder= "To"
                 onChange = { (e) => handleEduChange(e,index)}
                 name = "end"
