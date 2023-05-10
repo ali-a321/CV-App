@@ -169,13 +169,18 @@ export default function FormInput() {
                 name = "address"
                 value = {singleData.address}
               />
-              <input
-                type = "tel"
-                maxLength={20}
-                placeholder= "Phone number"
-                onChange = { (e) => handleChange(e,index)}
-                name = "phonenumber"
-                value = {singleData.phonenumber}
+            <input
+                type="tel"
+                maxLength={10}
+                placeholder="Phone number"
+                onChange={(e) => {
+                  const onlyNums = e.target.value.replace(/[^0-9]/g, ''); 
+                  if (onlyNums.length <= 10) { // limit to 10 digits
+                    handleChange({ target: { name: 'phonenumber', value: onlyNums } }, index); // 
+                  }
+                }}
+                name="phonenumber"
+                value={singleData.phonenumber}
               />
               <input
                 type = "text"
@@ -245,10 +250,10 @@ export default function FormInput() {
                 onChange={(e) => handleWorkChange(e, index)}
                 name="begin"
                 value={singleData.workInformation.begin}
-                pattern="\d*"
+              
               />
               <input
-                type="number"
+                type="text"
                 maxLength={8}
                 placeholder="End-date"
                 onChange={(e) => handleWorkChange(e, index)}
