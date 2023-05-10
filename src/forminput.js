@@ -239,12 +239,13 @@ export default function FormInput() {
                 value={singleData.workInformation.location}
               />
               <input
-                type="number"
+                type="text"
                 maxLength={8}
                 placeholder="Start-date"
                 onChange={(e) => handleWorkChange(e, index)}
                 name="begin"
                 value={singleData.workInformation.begin}
+                pattern="\d*"
               />
               <input
                 type="number"
