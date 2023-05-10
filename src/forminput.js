@@ -171,11 +171,12 @@ export default function FormInput() {
               />
             <input
                 type="tel"
-                maxLength={10}
+                maxLength={12}
+                pattern="[0-9()-]*"
                 placeholder="Phone number"
                 onChange={(e) => {
                   const onlyNums = e.target.value.replace(/[^0-9]/g, ''); 
-                  if (onlyNums.length <= 10) { // limit to 10 digits
+                  if (onlyNums.length <= 10) { 
                     handleChange({ target: { name: 'phonenumber', value: onlyNums } }, index); // 
                   }
                 }}
